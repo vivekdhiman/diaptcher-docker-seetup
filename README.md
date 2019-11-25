@@ -38,7 +38,7 @@ Now you need to run the docker container and specify the name. The command in a 
 Test Dispatcher by hitting URL [http://aem.dispatcher-dev:8080/] , you
 must be getting response 404. In that case setup has been completed.
 
-**Step 6 **
+**Step 6**
 
 To update and reflect and change in configuration file.
 
