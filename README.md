@@ -52,7 +52,14 @@ To update and reflect and change in configuration file.
 - Rebuild Image (Step 2)
 - Start the Container (Step 3)   
 
-**Platform where this tested so far**
+**Please read the following blog to manager docker based apache and
+dispatcher using intelliJ IDEA plugins.**
+
+[http://aemcorner.blogspot.com/2019/11/dispatcher-apache-management-using.html 
+]
+
+**Platform where this tested so
+far**
 
 OS Version - Mac
 
