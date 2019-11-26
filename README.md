@@ -9,6 +9,10 @@ Checkout the below repository using below command
 `git clone https://github.com/vivekdhiman/disptcher-docker-setup.git`
 
 **Step 2**
+Change Renderer in dispatcher.any will be change according to
+environment. you can use below command to find the IP 
+
+`ipconfig getifaddr en0 `
 
 Open the termination and navigate to **docker** directory.
 i.e. /disptcher-docker-setup/local/docker
@@ -31,7 +35,7 @@ Now you need to run the docker container and specify the name. The command in a 
 - dispatcher-app <--> Container Name
 - dispatcher-apache <--> Image File
 
-`docker run -dit -e HOSTIP=192.168.1.134 --rm --name dispatcher-app -p 8080:80 dispatcher-apache`
+`docker run -dit -e HOSTIP=$(ipconfig getifaddr en0) --rm --name dispatcher-app -p 8080:80 dispatcher-apache`
 
 **Step 5**
 
@@ -46,7 +50,7 @@ To update and reflect and change in configuration file.
 
      `docker stop dispatcher-app`
 - Rebuild Image (Step 2)
-- Start the Container (Step 3)     
+- Start the Container (Step 3)   
 
 **Platform where this tested so far**
 
