@@ -47,3 +47,13 @@ To update and reflect and change in configuration file.
      `docker stop dispatcher-app`
 - Rebuild Image (Step 2)
 - Start the Container (Step 3)     
+
+**Platform where this tested so far**
+
+OS Version - Mac
+
+Installed Docker Version - 2.1.0.4
+
+Apache - httpd:2.4
+
+Dispatcher - 4.2.3
